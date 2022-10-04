@@ -40,8 +40,8 @@ const UpdateUser = () => {
         <div>
             <h2>update user : {_id}</h2>
             <form action="" onSubmit={handeUpdateUser}>
-                <input type="text" name='name' placeholder='Name' required />
-                <input type="email" name='email' placeholder='Email' required />
+                <input value={user.name} type="text" name='name' placeholder='Name' required />
+                <input value={user.email} type="email" name='email' placeholder='Email' required />
                 <input type="submit" value="Submit" />
             </form>
         </div>
